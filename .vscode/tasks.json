@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compilar fila",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "queue.c",
+                "testafila.c",
+                "-o",
+                "output\\testafila.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Executar fila",
+            "command": "${workspaceFolder}\\output\\testafila.exe",
+            "dependsOn": "Compilar fila",
+            "problemMatcher": []
+        }
+    ]
+}
