@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compilar e testar fila",
+			"type": "shell",
+			"command": "gcc testafila.c queue.c -o testafila.exe && testafila.exe",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
